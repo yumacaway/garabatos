@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="popup" ng-csp>
+<head>
+	<title>Chrome Testbed Popup</title>
+	<script data-main="popup" src="lib/require.js"></script>
+  <style>
+    /* Angular Cloaking to pevent flash of uncompiled content */
+    [ng\:cloak], [ng-cloak], .ng-cloak { display: none; }
+  </style>
+</head>
+<body ng-cloak>
+<p>something</p>
+	<div>
+	  <label>Name:</label>
+	  <input type="text" ng-model="yourName" placeholder="Enter a name here">
+	  <hr>
+	  <h1>Hello {{yourName}}!</h1>
+	</div>
+</body>
+</html>

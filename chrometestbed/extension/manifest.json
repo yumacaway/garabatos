@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Chrome Testbed",
+  "description": "Explorations of the different chrome.* apis.",
+  "version": "0.1",
+
+  "browser_action" : {
+    "default_title": "Chrome Testbed",
+    "default_icon": {
+      "19": "icon.png",
+      "38": "icon.png"
+    },
+    "default_popup": "popup.html"
+  },
+ 
+  "permissions": [
+    "http://*/*",
+    "pageCapture",
+    "webRequest",
+    "webRequestBlocking",
+    "unlimitedStorage"
+  ]
+}
